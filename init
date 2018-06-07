@@ -1,0 +1,7 @@
+#ifndef _XmlSql_Test_App_icpp_init_stub
+#define _XmlSql_Test_App_icpp_init_stub
+#include "CtrlLib/init"
+#include "Docking/init"
+#include "GridCtrl/init"
+#include "XmlSql/init"
+#endif

@@ -1,0 +1,29 @@
+LAYOUT(EventsLayout, 372, 168)
+	ITEM(GridCtrl, tgrid, ColoringMode(1).MultiSelect(true).Indicator(true).EditsInNewRow(false).Clipboard(true).ExtraPaste(false).HSizePosZ(-4, 0).VSizePosZ(0, 0))
+END_LAYOUT
+
+LAYOUT(ConnectionLayout, 340, 176)
+	ITEM(Label, dv___0, SetLabel(t_("iProtect user password:")).SetFont(StdFont().Italic()).LeftPosZ(4, 140).TopPosZ(100, 13))
+	ITEM(Label, dv___1, SetLabel(t_("iProtect user login name:")).SetFont(StdFont().Italic()).LeftPosZ(4, 140).TopPosZ(72, 19))
+	ITEM(Label, dv___2, SetLabel(t_("Name / Description")).SetFont(StdFont().Italic()).LeftPosZ(4, 136).TopPosZ(0, 19))
+	ITEM(Label, dv___3, SetLabel(t_("iProtect server IP adress: ")).SetFont(StdFont().Italic()).LeftPosZ(4, 140).TopPosZ(48, 19))
+	ITEM(EditString, nameEdit, RightPosZ(8, 328).TopPosZ(20, 19))
+	ITEM(EditString, serveripEdit, TrimRight(true).MaxLen(15).RightPosZ(8, 164).TopPosZ(48, 19))
+	ITEM(EditString, loginEdit, HCenterPosZ(164, 80).TopPosZ(72, 19))
+	ITEM(EditString, passwordEdit, RightPosZ(8, 164).TopPosZ(96, 19))
+	ITEM(Button, cancelButton, SetLabel(t_("Cancel")).LeftPosZ(256, 80).VSizePosZ(152, 5))
+	ITEM(Button, okButton, SetLabel(t_("OK")).LeftPosZ(168, 80).VSizePosZ(152, 5))
+	ITEM(Switch, portSwitch, LeftPosZ(4, 328).TopPosZ(124, 16))
+END_LAYOUT
+
+LAYOUT(SqlQueryLayout, 676, 380)
+	ITEM(GridCtrl, grid, ColoringMode(1).SelectRow(false).MultiSelect(true).ResizingRows(true).FullRowResizing(true).ResizeColMode(0).EditMode(1).ColorRows(true).Hiding(true).Clipboard(true).HSizePosZ(0, 0).VSizePosZ(-4, 32))
+	ITEM(EditString, sql_edit, HSizePosZ(4, 168).BottomPosZ(5, 19))
+	ITEM(Button, query_btn, SetLabel(t_("Query")).SetFont(StdFont().Bold()).RightPosZ(24, 108).BottomPosZ(4, 20))
+END_LAYOUT
+
+LAYOUT(TableViewer, 580, 328)
+	ITEM(Splitter, v, LeftPosZ(0, 580).TopPosZ(0, 328))
+	ITEM(GridCtrl, dv___1, LeftPosZ(0, 272).TopPosZ(0, 140))
+END_LAYOUT
+
