@@ -1,4 +1,4 @@
-﻿#ifndef _ccAssistant_ccAssistant_h
+#ifndef _ccAssistant_ccAssistant_h
 #define _ccAssistant_ccAssistant_h
 
 #include <CtrlLib/CtrlLib.h>
@@ -169,5 +169,5 @@ struct Connection: Moveable<Connection>
 	}
 };
 
-// test 
+// test 2
 #endif
